@@ -1,0 +1,89 @@
+body {
+  background-image: url("/demo2/assets/image.webp");
+  background-size: cover; /* L'image couvre toute la zone */
+  background-position: center; /* Centrage de l'image */
+  background-repeat: no-repeat; /* Évite la répétition */
+  background-attachment: fixed; /* Image reste en place au défilement */
+  animation: scrollBackground 0.5s forwards;
+}
+
+h1 {
+  animation: scrollBottom 0.5s forwards, fadeIn 1s forwards;
+}
+
+h2 {
+  animation: scrollTop 0.5s forwards, fadeIn 1s forwards;
+}
+
+#video {
+  animation: scrollTop 0.5s forwards;
+}
+
+#playlist ul {
+  animation: scrollRight 0.5s forwards;
+}
+
+/* Animation pour faire défiler les éléments horizontalement */
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollTop {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollBottom {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0; /* Départ */
+  }
+  100% {
+    background-position: center; /* Fin du défilement */
+  }
+}
+
+/* Téléphones moyens et tablettes */
+@media (max-width: 768px) {
+    #content #main-video{
+        width: 100% !important;
+    }
+
+    #content #video-list {
+        margin-top: 20px;
+    }
+}
+
+/* Tablettes larges ou petites ordinateurs (992px et plus) */
+@media (min-width: 992px) {
+}
+
+/* Ordinateurs de bureau (1200px et plus) */
+@media (min-width: 1200px) {
+}

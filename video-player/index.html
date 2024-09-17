@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Vidéo avec Playlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- <div class="dimensions"></div>
+        <p id="window-size">Largeur : 0px, Hauteur : 0px</p>
+    </div> -->
+
+    <!-- Titre -->
+    <h1 class="text-3xl mt-4 font-bold text-red-500 text-center">Lecteur vidéo en HTML5</h1>
+    <!-- Sous-titre -->
+    <h2 class="text-center text-gray-500">Lecteur avancé en HTML5, CSS et Tailwind CSS</h2> 
+    <div id="content" class="p-8 sm:flex sm:justify-center">
+        <!-- Section principale de la vidéo -->
+        <div id="video" class="bg-white dark:bg-gray-100 shadow-2xl rounded-lg p-2">
+            <iframe
+                id="main-video" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/0E9OQBd0gF4" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Liste de lecture -->
+        <div id="playlist" class="ml-8 flex items-center justify-center">
+            <ul id="video-list" class="space-y-2" class="scroll" style="width: 100px;">
+                <li data-src="https://www.youtube.com/embed/0E9OQBd0gF4" class="text-center font-bold p-4 bg-gray-200 bg-red-500 text-white hover:bg-red-500 hover:text-white cursor-pointer rounded-full active">Vidéo 1</li>
+                <li data-src="https://www.youtube.com/embed/-lJ9En6E9Z8" class="text-center p-4 bg-gray-200 hover:bg-red-500 hover:text-white cursor-pointer rounded-full">Vidéo 2</li>
+                <li data-src="https://www.youtube.com/embed/CvrToEwoXoA" class="text-center p-4 bg-gray-200 hover:bg-red-500 hover:text-white cursor-pointer rounded-full">Vidéo 3</li>
+                <li data-src="https://www.youtube.com/embed/CvrToEwoXoA" class="text-center p-4 bg-gray-200 hover:bg-red-500 hover:text-white cursor-pointer rounded-full">Vidéo 4</li>
+                <li data-src="https://www.youtube.com/embed/CvrToEwoXoA" class="text-center p-4 bg-gray-200 hover:bg-red-500 hover:text-white cursor-pointer rounded-full">Vidéo 5</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
