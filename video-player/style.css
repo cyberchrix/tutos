@@ -1,5 +1,5 @@
 body {
-  background-image: url("/demo2/assets/image.webp");
+  background-image: url("/video-player/assets/image.webp");
   background-size: cover; /* L'image couvre toute la zone */
   background-position: center; /* Centrage de l'image */
   background-repeat: no-repeat; /* Évite la répétition */
