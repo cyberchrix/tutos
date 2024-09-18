@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colonnes avec Flexbox</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between; /* Espace égal entre les colonnes */
+    }
+
+    .column {
+      background-color: lightblue;
+      padding: 20px;
+      flex: 1; /* Chaque colonne occupe une proportion égale de l'espace */
+      margin: 10px;
+    }
+
+    /* Styles pour les petits écrans */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; /* Sur mobile, les colonnes s'affichent verticalement */
+      }
+
+      .column {
+        margin: 10px 0; /* Ajoute un espacement vertical entre les colonnes sur mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="column">Colonne 1</div>
+    <div class="column">Colonne 2</div>
+    <div class="column">Colonne 3</div>
+  </div>
+
+</body>
+</html>
