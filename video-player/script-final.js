@@ -3,6 +3,7 @@ const videoPlayer = document.getElementById('main-video');
 const videoList = document.getElementById('video-list');
 const videoItems = videoList.getElementsByTagName('li');
 
+
 // Gestion de la playlist
 for (let item of videoItems) {
     item.addEventListener('click', function() {
