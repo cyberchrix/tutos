@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire de Bibliothèque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ma Bibliothèque</h1>
+    <form id="book-form">   
+      <input type="text" id="title" placeholder="Titre" required>
+      <input type="text" id="author" placeholder="Auteur" required>
+      <input type="number" id="year" placeholder="Année" required>
+      <select id="status">
+        <option value="Non lu">Non lu</option>
+        <option value="Lu">Lu</option>
+      </select>
+      <button type="submit">Ajouter</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Auteur</th>
+          <th>Année</th>
+          <th>Statut</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        <!-- Les livres apparaîtront ici -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
